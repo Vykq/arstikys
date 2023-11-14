@@ -1,0 +1,74 @@
+$white : #FFFFFF;
+$blue : #246BFD;
+$hblue: #0E53E0;
+$black : #000;
+$bordergray : #575757;
+$txtgray : #C9C9C9;
+
+
+$px15: .75rem;
+$px16: .8rem;
+$px17: .85rem;
+$px18: .9rem;
+$px19: .95rem;
+$px22: 1.1rem;
+$px23: 1.15rem;
+$px28: 1.4rem;
+$px35: 1.75rem;
+$px75: 3.75rem;
+
+@mixin fullStructure() {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 2000px) {
+    width: 1920px;
+  }
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+  @media (max-width: 480px) {
+    width: 98%;
+  }
+}
+
+@mixin structure() {
+  width: 80%;
+  margin: 0 auto;
+  @media (min-width: 2000px) {
+    width: 1600px;
+  }
+  @media (max-width: 1200px) {
+    width: 75%;
+  }
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  @media (max-width: 480px) {
+    width: 95%;
+  }
+}
+
+@mixin centerAbsolute() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin imageCover($vertical, $horizontal) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: $vertical $horizontal;
+  transform: none;
+}
+
