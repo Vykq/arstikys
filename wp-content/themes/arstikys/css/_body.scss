@@ -59,6 +59,9 @@ p {
   &.px15 {
     font-size: $px15;
   }
+  &.px16 {
+    font-size: $px16;
+  }
   &.medium {
     font-weight: 500;
   }
@@ -68,8 +71,14 @@ p {
   &.white {
     color: #fff;
   }
+  &.px17{
+    font-size:$px17;
+  }
   &.px25 {
     font-size: 1.25rem;
+  }
+  &.px50 {
+    font-size: 2.5rem;
   }
   &.bold {
     font-weight: 700;

@@ -4,7 +4,7 @@ $hblue: #0E53E0;
 $black : #000;
 $bordergray : #575757;
 $txtgray : #C9C9C9;
-
+$footerbg : #1F1F1F;
 
 $px15: .75rem;
 $px16: .8rem;
@@ -30,10 +30,10 @@ $px75: 3.75rem;
     width: 90%;
   }
   @media (max-width: 768px) {
-    width: 95%;
+    width: 92%;
   }
   @media (max-width: 480px) {
-    width: 98%;
+    width: 95%;
   }
 }
 
@@ -53,7 +53,7 @@ $px75: 3.75rem;
     width: 85%;
   }
   @media (max-width: 480px) {
-    width: 95%;
+    width: 85%;
   }
 }
 

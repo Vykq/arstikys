@@ -35,6 +35,11 @@
 </svg>
 </span></a>
                     </div>
+                    <div class="mobile-burger-area mobile-menu-open">
+                        <div class="line top"></div>
+                        <div class="line mid"></div>
+                        <div class="line bot"></div>
+                    </div>
                     
                 </div>
             </div>
