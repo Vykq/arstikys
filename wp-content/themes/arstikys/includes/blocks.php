@@ -4,6 +4,8 @@ global $blocks;
 
 $blocks = array(
     'main-hero' => 'Main hero',
+    'about-me-block' => 'About me Block',
+    'board-rules' => 'Board rules',
 );
 
 add_action('acf/init', 'my_acf_init');

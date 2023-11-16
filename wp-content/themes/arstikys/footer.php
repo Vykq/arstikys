@@ -12,7 +12,7 @@
                     </div>
                     <?php if(get_field('description','main')) : ?>
                         <div class="description">
-                            <p class="px17 white"><?php the_field('description','main'); ?></p>
+                            <p class="px16"><?php the_field('description','main'); ?></p>
                         </div>
                     <?php endif; ?>
                     <div class="blue-button-area">
@@ -86,12 +86,12 @@
             <div class="bottom-footer">
                 <div class="wrapper">
                     <div class="left">
-                        <p class="white">© <?php echo date('Y') . ' Arstikys.lt'; ?> / <a class="blue" href="/privacy-policy/">Policy</a></p>
+                        <p class="white px16 medium">© <?php echo date('Y') . ' Arstikys.lt'; ?> / <a class="blue px16 medium" href="/privacy-policy/">Privacy</a></p>
                     </div>
                     <div class="right">
                         <?php if(get_field('copyright_text','main')) : ?>
                             <div class="copyright">
-                                <p class="px16 white"><?php the_field('copyright_text','main'); ?></p>
+                                <p class="px16 white medium"><?php the_field('copyright_text','main'); ?></p>
                             </div>
                         <?php endif; ?>
                     </div>
