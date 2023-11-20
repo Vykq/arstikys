@@ -42,3 +42,29 @@ function theme_features() {
 }
 add_action('after_setup_theme', 'theme_features');
 
+function theme_post_types()
+{
+    register_post_type('news', array(
+        'rewrite' => array('slug' => _x( 'news', 'slug', 'core' )),
+        'has_archive' => false,
+        'public' => true,
+        'menu_position' => -1,
+        'labels' => array(
+            'name' => 'News',
+            'add_new_item' => 'Add new topic',
+            'edit_item' => 'Edit new',
+            'all_items' => 'All News',
+            'singular_name' => 'New'
+        ),
+        'supports' => array (
+            'title',
+            'page-attributes',
+        ),
+        'menu_icon' => 'dashicons-groups',
+        'show_in_rest' => true
+    ));
+}
+
+add_action('init', 'theme_post_types');
+
+

@@ -1,0 +1,52 @@
+.big-cta-block {
+  position: relative;
+  padding: 10rem 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 50rem;
+  @media (max-width: 900px){
+    min-height: 21rem;
+    background-size: 400%;
+    background-position: 80% 0%;
+    padding: 4.5rem 0;
+  }
+  .shadow{
+    display: none;
+    @media (max-width: 900px){
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #00000060;
+        display: block;
+    }
+  }
+  .container{
+    @include structure();
+    position: relative;
+    z-index: 1;
+    .text-area{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .title{
+        @media (max-width: 900px){
+          br{
+            display: none;
+          }
+        }
+      }
+      .content{
+        max-width: 50%;
+        @media (max-width: 900px){
+          max-width: 100%;
+        }
+      }
+      .blue-button-area{
+        margin-top: 1rem;
+        display: flex;
+      }
+    }
+  }
+}

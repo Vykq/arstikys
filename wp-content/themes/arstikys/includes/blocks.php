@@ -6,6 +6,10 @@ $blocks = array(
     'main-hero' => 'Main hero',
     'about-me-block' => 'About me Block',
     'board-rules' => 'Board rules',
+    'consultations-block' => 'Consultations block',
+    'strategy-management' => 'Strategy management',
+    'big-cta-block' => 'Big CTA block',
+    'news-block' => 'News block',
 );
 
 add_action('acf/init', 'my_acf_init');
