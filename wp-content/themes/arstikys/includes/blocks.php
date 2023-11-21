@@ -10,6 +10,8 @@ $blocks = array(
     'strategy-management' => 'Strategy management',
     'big-cta-block' => 'Big CTA block',
     'news-block' => 'News block',
+    'about-me-hero' => 'About me hero',
+    'experience-block' => 'Experience block'
 );
 
 add_action('acf/init', 'my_acf_init');

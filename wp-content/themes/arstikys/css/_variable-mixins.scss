@@ -58,6 +58,26 @@ $px75: 3.75rem;
   }
 }
 
+@mixin mobileMenuStructure() {
+  width: 75%;
+  margin: 0 auto;
+  @media (min-width: 2000px) {
+    width: 1600px;
+  }
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+  @media (max-width: 1024px) {
+    width: 85%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
 @mixin centerAbsolute() {
   position: absolute;
   top: 50%;

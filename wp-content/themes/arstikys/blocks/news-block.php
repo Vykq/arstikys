@@ -11,7 +11,7 @@ $news = get_field('news');
         <?php if(!empty($news)) : ?>
             <div class="news-area">
                 <?php foreach ($news as $id) : ?>
-                    <a href="<?php the_field('url_to_published_post', $id); ?>" class="single-new">
+                    <a href="<?php the_field('url_to_published_post', $id); ?>" class="single-new" target="_blank">
                         <div class="left">
                             <p class="title px30 semi"><?php echo get_the_title($id); ?></p>
                             <div class="info-area">

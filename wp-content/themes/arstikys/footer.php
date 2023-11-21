@@ -46,17 +46,17 @@
                     <div class="social-links">
                         <?php if(get_field('facebook','main')) : ?>
                             <div class="link">
-                                <a class="white" href="<?php the_field('facebook','main'); ?>">Facebook</a>
+                                <a class="white" href="<?php the_field('facebook','main'); ?>" target="_blank">Facebook</a>
                             </div>
                         <?php endif; ?>
                         <?php if(get_field('youtube','main')) : ?>
                             <div class="link">
-                                <a class="white" href="<?php the_field('youtube','main'); ?>">Youtube</a>
+                                <a class="white" href="<?php the_field('youtube','main'); ?>" target="_blank">Youtube</a>
                             </div>
                         <?php endif; ?>
                         <?php if(get_field('instagram','main')) : ?>
                             <div class="link">
-                                <a class="white" href="<?php the_field('instagram','main'); ?>">Instagram</a>
+                                <a class="white" href="<?php the_field('instagram','main'); ?>" target="_blank">Instagram</a>
                             </div>
                         <?php endif; ?>
                     </div>

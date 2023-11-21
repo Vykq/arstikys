@@ -1,0 +1,38 @@
+.experience-block{
+  padding:7.5rem 0;
+  .container{
+    @include structure();
+    .h2{
+      margin-bottom: 1.75rem;
+    }
+    .experience-area{
+      display: grid;
+      grid-template-columns: 1fr;
+      .single-experience{
+        padding:1.75rem 0;
+        border-bottom: 1px solid $bordergray;
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        gap:2rem;
+        @media (max-width: 500px){
+          grid-template-columns: 1fr;
+          gap:1rem;
+        }
+        &:last-of-type{
+          border-bottom: none;
+        }
+        .title{
+          .divider{
+            color:$blue;
+            margin:0 .25rem;
+          }
+        }
+        .date{
+          p{
+            color:$txtgray;
+          }
+        }
+      }
+    }
+  }
+}

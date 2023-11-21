@@ -122,4 +122,53 @@ header{
       }
     }
   }
+  .mobile-menu{
+    background-color: $blue;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    transform:translateX(100%);
+    opacity: 0;
+    transition: .2s all ease-in-out;
+    &.show{
+      opacity: 1;
+      transform:translateX(0%);
+    }
+    .container{
+      @include mobileMenuStructure();
+      .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        .top{
+          padding: 2.5rem 0;
+          border-bottom: 1px solid #99BAFC;
+        }
+        .middle{
+          padding:2rem 0;
+          border-bottom: 1px solid #99BAFC;
+          .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li{
+              a{
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+        .bottom{
+          padding:2.5rem 0;
+          .social-links{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
+
