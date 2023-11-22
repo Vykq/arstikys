@@ -11,7 +11,9 @@ $blocks = array(
     'big-cta-block' => 'Big CTA block',
     'news-block' => 'News block',
     'about-me-hero' => 'About me hero',
-    'experience-block' => 'Experience block'
+    'experience-block' => 'Experience block',
+    'double-image-text-block' => '2x Image Text block',
+    'board-rules-hero' => 'Board rules hero',
 );
 
 add_action('acf/init', 'my_acf_init');

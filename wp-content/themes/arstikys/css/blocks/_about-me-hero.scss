@@ -23,24 +23,7 @@
       @media (max-width: 900px){
         padding-top: 4rem;
       }
-      span{
-        cursor: pointer;
-        padding:1rem 3rem;
-        border-radius: 1.5rem;
-        border:1px solid $bordergray;
-        color:$txtgray;
-        font-size: 0.9rem;
-        line-height: 1rem;
-        font-weight: 600;
-        width: fit-content;
-        margin-bottom: 5rem;
-        @media (max-width: 900px){
-          margin-bottom: 3rem;
-        }
-        @media (max-width: 500px){
-          margin-bottom: 1.5rem;
-        }
-      }
+
       h1{
         @media (max-width: 1536px){
           font-size: 3.5rem;
