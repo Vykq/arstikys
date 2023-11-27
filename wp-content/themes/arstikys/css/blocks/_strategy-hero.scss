@@ -1,0 +1,59 @@
+.strategy-hero{
+  padding: 6rem 0 0;
+  overflow: hidden;
+  margin-bottom: 4.5rem;
+  .container {
+    @include structure();
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap:6.5rem;
+      margin-top: 5rem;
+      @media (max-width: 1200px){
+        gap:3rem;
+      }
+      @media (max-width: 900px){
+        grid-template-columns: 1fr;
+      }
+      .left{
+        .content{
+          margin-top: 1.75rem;
+          white-space: break-spaces;
+        }
+        .image-area{
+          margin-top: 8rem;
+          overflow: hidden;
+          border-radius: 0 15px 15px 0;
+          width: calc(130% + 2rem);
+          transform: translateX(-30%);
+          max-height: 30rem;
+          @media (max-width: 900px){
+            width: 120%;
+            transform: translateX(-20%);
+          }
+          img{
+            @include imageCover(50%, 50%);
+          }
+        }
+      }
+      .right{
+        .image-area{
+          width: calc(120% + 2rem);
+          overflow: hidden;
+          border-radius: 15px 0 0 15px;
+          max-height: 54rem;
+          @media (max-width: 1200px){
+            width: calc(125% + 3rem);
+          }
+          @media (max-width: 900px){
+            width: 100%;
+            transform: translateX(15%);
+          }
+          img{
+            @include imageCover(50%, 50%);
+          }
+        }
+      }
+    }
+  }
+}

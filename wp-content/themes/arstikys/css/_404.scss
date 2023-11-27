@@ -1,0 +1,85 @@
+.not-found-page{
+  overflow: hidden;
+  position: relative;
+  padding:12.5rem 0;
+  background-size: 100%;
+  background-position: 50% 50%;
+  @media (max-width: 900px){
+    background-size: cover;
+  }
+  .shadow {
+    &.top {
+      height: 21rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(0deg, #FFFFFF00, rgba(1, 1, 1, 1) 90%);
+      @media (max-width: 900px) {
+        height: 25%;
+      }
+    }
+
+    &.bottom {
+      height: 21rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, #FFFFFF00, #010101 50%);
+      @media (max-width: 900px) {
+        height: 25%;
+      }
+    }
+
+    &.left {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 23.5rem;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgb(0 0 0 / 60%) 50%);
+      @media (max-width: 900px) {
+        width: 25%;
+      }
+    }
+
+    &.right {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 23.5rem;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(0 0 0 / 60%) 50%);
+      @media (max-width: 900px) {
+        width: 25%;
+      }
+    }
+  }
+  .container{
+    @include structure();
+    position: relative;
+    z-index: 1;
+    h1{
+      font-size: 10.5rem;
+      line-height: 11rem;
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+      @media (max-width: 500px){
+        font-size: 8rem;
+        line-height: 9rem;
+      }
+    }
+    p{
+      @media (max-width: 500px){
+        br{
+          display: none;
+        }
+      }
+    }
+    .blue-button-area{
+      display: flex;
+      margin-top:3rem;
+    }
+  }
+}

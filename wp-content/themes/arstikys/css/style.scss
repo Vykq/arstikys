@@ -14,6 +14,9 @@
 @import "body";
 @import "header";
 @import "footer";
+@import "404";
+@import "news";
+@import "single-new";
 
 @import "blocks/main-hero";
 @import "blocks/about-me";
@@ -25,3 +28,11 @@
 @import "blocks/about-me-hero";
 @import "blocks/experience-block";
 @import "blocks/2x-text-image-block";
+@import "blocks/board-rules-hero";
+@import "blocks/select-faqs";
+@import "blocks/consultations-hero";
+@import "blocks/strategy-hero";
+@import "blocks/grid-blocks";
+@import "blocks/contacts-block";
+@import "blocks/calendly-hero";
+@import "blocks/content";

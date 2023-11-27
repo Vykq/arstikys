@@ -39,7 +39,7 @@
                         <?php endif; ?>
                         <?php if(get_field('address','main')) : ?>
                             <div class="link">
-                                <a class="white" href="tel:<?php the_field('map_url','main'); ?>">Address: <?php the_field('address','main'); ?></a>
+                                <a class="white" href="<?php the_field('map_url','main'); ?>">Address: <?php the_field('address','main'); ?></a>
                             </div>
                         <?php endif; ?>
                     </div>

@@ -24,6 +24,7 @@
                             <a class="medium white px17"  href="/boards/">Boards</a>
                             <a class="medium white px17"  href="/consultations/">Consultations</a>
                             <a class="medium white px17"  href="/strategy-management/">Strategy management</a>
+                            <a class="medium white px17"  href="/news/">News</a>
                             <a class="medium white px17" href="/contacts/">Contacts</a>
                         </nav>
                     </div>
@@ -72,7 +73,11 @@
                             </li>
                             <li class="menu-item">
                                 <a href="/strategy-management/" class="white medium">Strategy management</a>
-                            </li>  <li class="menu-item">
+                            </li>
+                            <li class="menu-item">
+                                <a href="/news/" class="white medium">News</a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="/contacts/" class="white medium">Contacts</a>
                             </li>
                         </ul>

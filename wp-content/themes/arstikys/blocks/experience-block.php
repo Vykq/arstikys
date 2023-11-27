@@ -1,3 +1,4 @@
+
 <div class="experience-block">
     <div class="container">
         <h2 class="title white px50 semi"><?php the_field('title'); ?></h2>
@@ -29,13 +30,20 @@
                                 <?php
                                 $start = get_sub_field('start');
                                 $end = (get_sub_field('end')) ? get_sub_field('end') : 'Present';
-                                $today = new DateTime(date('M Y'));
+                                $today = date('M-Y-d');
 
                                 $startDate = new DateTime($start);
-                                $endDate = (get_sub_field('end')) ? new DateTime($end) : new DateTime(date('M Y'));
+                                $endDate = (get_sub_field('end')) ? new DateTime($end) : new DateTime($today);
                                 $interval = $startDate->diff($endDate);
+                                $startShow = date('M Y', strtotime($start));
+                                if($end == "Present"){
+                                    $endShow = 'Present';
+                                } else {
+                                    $endShow = date('M Y', strtotime($end));
+                                }
+
                                 ?>
-                                <p class="px18"><?php echo $start; ?> - <?php echo $end; ?> · <?php echo $interval->format('%y yr %m mos'); ?></p>
+                                <p class="px18"><?php echo $startShow; ?> - <?php echo $endShow; ?> · <?php echo $interval->format('%y yr %m mos'); ?></p>
                             </div>
                         </div>
                     </div>

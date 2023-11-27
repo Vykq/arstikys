@@ -17,7 +17,7 @@ const openMobileMenu = () => {
 
     window.addEventListener('keyup', function (e) {
         if (e.keyCode == 27) {
-            toggleMenu();
+            closeMenu();
         }
     })
 
@@ -40,7 +40,6 @@ const openMobileMenu = () => {
         mobileMenu.classList.toggle('show');
         body.classList.toggle('modal-is-open');
         html.classList.toggle('modal-is-open');
-
     }
 
     function closeMenu() {

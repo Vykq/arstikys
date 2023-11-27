@@ -6,16 +6,18 @@ const setConsultationsObserver = () => {
                 const el = entry.target;
                 if (el.currentTime === 0) {
                     return
+                } else {
+                    el.classList.add('active');
                 }
                 if (!entry.isIntersecting || entry.intersectionRatio <= 0.1) {
                     el.classList.remove('active');
-                } else  {
+                } else {
                     el.classList.add('active');
                 }
             })
         },
         {
-            threshold: [1, 1]
+            threshold: [0.9, 0.9]
         }
     );
 

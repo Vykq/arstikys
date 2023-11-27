@@ -26,6 +26,9 @@ function webpack_files() {
             'surname_error' => __('Neteisingai užpildytas pavardės laukelis', 'core'),
             'phone_empty' => __('Neužpildytas telefono laukelis', 'core'),
             'phone_error' => __('Neteisingai užpildytas telefono laukelis', 'core'),
+            'mail_empty' => __('Neužpildytas el. pašto laukelis', 'core'),
+            'mail_error' => __('Neteisingai užpildytas el. pašto laukelis', 'core'),
+            'msg_empty' => __('Tuščia žinutė...', 'core'),
         )
     );
     //wp_enqueue_script('splide-js', get_theme_file_uri('assets/splide.min.js'), array(), '4.1.4', true);
@@ -41,6 +44,8 @@ function theme_features() {
     add_theme_support( 'post-thumbnails' );
 }
 add_action('after_setup_theme', 'theme_features');
+update_option('rsssl_skip_challenge_directory_request', true);
+
 
 function theme_post_types()
 {
@@ -59,8 +64,30 @@ function theme_post_types()
         'supports' => array (
             'title',
             'page-attributes',
+            'editor',
+            'thumbnail'
         ),
         'menu_icon' => 'dashicons-groups',
+        'show_in_rest' => true
+    ));
+
+    register_post_type('faq', array(
+        'rewrite' => array('slug' => _x( 'faqs', 'slug', 'core' )),
+        'has_archive' => false,
+        'public' => true,
+        'menu_position' => -1,
+        'labels' => array(
+            'name' => 'Faqs',
+            'add_new_item' => 'Add faq',
+            'edit_item' => 'Edit faq',
+            'all_items' => 'All faq',
+            'singular_name' => 'FAQ'
+        ),
+        'supports' => array (
+            'title',
+            'page-attributes',
+        ),
+        'menu_icon' => 'dashicons-format-chat',
         'show_in_rest' => true
     ));
 }

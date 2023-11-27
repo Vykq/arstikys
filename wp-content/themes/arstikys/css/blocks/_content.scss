@@ -1,0 +1,12 @@
+.content-block{
+  margin:9rem 0;
+  .container{
+    @include structure();
+    .content{
+      white-space-collapse: preserve-breaks;
+      *{
+        color:$white;
+      }
+    }
+  }
+}

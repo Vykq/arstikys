@@ -1,0 +1,105 @@
+.grid-blocks{
+  margin:4.5rem 0;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  .container{
+    @include structure();
+    h2{
+      margin-bottom: 1.75rem;
+    }
+    .grid{
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:1.75rem;
+      @media (max-width: 1024px){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 900px){
+        grid-template-columns: 1fr;
+      }
+      .single-block{
+        border-radius: 10px;
+        padding: 2rem;
+        background-color: $footerbg;
+        min-height: 21rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (max-width: 1024px){
+          min-height: 15rem;
+        }
+        .title{
+          line-height: 2rem;
+          width: 50%;
+          color:$txtgray;
+          transition: .2s all ease-in-out;
+          @media (max-width: 1700px){
+            width: 75%;
+          }
+          @media (max-width: 1280px){
+            width: 100%;
+          }
+        }
+        .content{
+          color:$txtgray;
+          transition: .2s all ease-in-out;
+        }
+        &:hover{
+          p{
+            color:$white;
+          }
+        }
+      }
+    }
+    .text-image{
+      display: grid;
+      grid-template-columns:1fr 1.5fr;
+      gap:6.5rem;
+      margin-top: 9.5rem;
+      @media (max-width: 1720px){
+        gap: 4.5rem;
+      }
+      @media (max-width: 1180px){
+        grid-template-columns: 1fr 2fr;
+      }
+      @media (max-width: 900px){
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+        margin-top: 5rem;
+      }
+      .image-area{
+        //max-width: 42rem;
+        width: 140%;
+        transform: translateX(-25%);
+        border-radius: 0 15px 15px 0;
+        overflow: hidden;
+        @media (max-width: 1200px){
+          width: 150%;
+          transform: translateX(-30%);
+        }
+        @media (max-width: 1180px){
+          width: 160%;
+          transform: translateX(-35%);
+        }
+        @media (max-width: 900px){
+          width: 120%;
+          transform: translateX(-20%);
+        }
+        img{
+          @include imageCover(50%,50%);
+        }
+      }
+      .content-area{
+        align-self: center;
+        h2{
+        }
+        .subtitle{
+          color:$white;
+          white-space-collapse: preserve-breaks;
+        }
+      }
+    }
+  }
+}

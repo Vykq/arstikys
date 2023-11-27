@@ -1,0 +1,91 @@
+.faqs{
+  margin:8rem 0;
+  .container{
+    @include structure();
+    .faqs-area{
+      display: grid;
+      grid-template-columns: 1fr;
+      .single-duk-accordion{
+
+        .duk-top-area{
+          display: flex;
+          gap:4rem;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          border-bottom:1px solid $bordergray;
+          padding:2.25rem 0;
+          .title{
+            transition: .2s all ease-in-out;
+          }
+          svg{
+            transition: .2s all ease-in-out;
+            width: 4rem;
+            height: 4rem;
+          }
+          &:hover{
+            .title{
+              color:$blue;
+            }
+            svg{
+              transform:rotate(180deg);
+                circle{
+                  fill:$blue;
+                }
+              #Path_592, #Line_41{
+                stroke:$white;
+              }
+            }
+          }
+          &.active{
+            border-bottom:none;
+            .title{
+              color:$blue;
+            }
+            svg{
+              transform:rotate(180deg);
+              circle{
+                fill:$blue;
+              }
+              #Path_592, #Line_41{
+                stroke:$white;
+              }
+            }
+          }
+
+        }
+        .duk-inside{
+          max-height: 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: .2s all ease;
+          display: flex;
+          flex-direction: column;
+          gap:2rem;
+          .single-duk-answer{
+            .answer{
+              * {
+                font-weight: 400;
+                color:$white;
+              }
+              b, strong{
+                font-weight: 700;
+              }
+              a{
+                color:$blue;
+                text-decoration: underline;
+              }
+            }
+          }
+          &.active{
+            opacity: 1;
+            visibility: visible;
+            border-bottom: 1px solid $bordergray;
+            padding: 0rem 0 3rem; //Pakeisti ir JS faile
+          }
+        }
+
+      }
+    }
+  }
+}

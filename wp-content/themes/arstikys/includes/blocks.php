@@ -14,6 +14,13 @@ $blocks = array(
     'experience-block' => 'Experience block',
     'double-image-text-block' => '2x Image Text block',
     'board-rules-hero' => 'Board rules hero',
+    'select-faqs' => 'Select FAQ`s',
+    'consultations-hero' => 'Consultations hero',
+    'strategy-hero' => 'Strategy hero',
+    'grid-blocks' => 'Grid Blocks',
+    'contacts-block' => 'Contacts block',
+    'calendly-block' => 'Calendly hero',
+    'content' => 'Content',
 );
 
 add_action('acf/init', 'my_acf_init');
