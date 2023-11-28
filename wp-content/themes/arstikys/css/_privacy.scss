@@ -1,0 +1,91 @@
+.private-policy-content{
+  background-size: 100%;
+  background-position: 50% 0%;
+  padding:3rem 0;
+  position: relative;
+  overflow: hidden;
+  .shadow{
+    &.top{
+      height: 50%;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(0deg, #FFFFFF00, #010101 75%);
+      @media (max-width: 900px){
+        height: 50%;
+      }
+    }
+    &.bottom{
+      height: 50%;
+      position: absolute;
+      bottom:0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, #FFFFFF00, #010101 50%);
+      @media (max-width: 900px){
+        height: 75%;
+      }
+    }
+    &.left{
+      height: 100%;
+      position: absolute;
+      bottom:0;
+      left: 0;
+      width: 50%;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgb(0 0 0 / 60%) 50%);
+      @media (max-width: 900px){
+        width: 50%;
+      }
+    }
+    &.right{
+      height: 100%;
+      position: absolute;
+      bottom:0;
+      right: 0;
+      width: 50%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(0 0 0 / 60%) 50%);
+      @media (max-width: 900px){
+        width: 50%;
+      }
+    }
+  }
+  .container{
+    @include structure();
+    position: relative;
+    z-index: 1;
+    h1{
+    }
+    .content-wrapper{
+      margin:2rem 0;
+      p{
+        padding-top: 1rem;
+      }
+      ul{
+        margin-bottom: 2rem;
+        li{
+          color:$white;
+        }
+      }
+      a{
+        color:$blue;
+        text-decoration: underline;
+      }
+      figure{
+        table{
+          color:$white;
+          border:1px solid $white;
+          tr, td, th,{
+            border:1px solid $white;
+            border-right: 1px solid $white;
+            &:first-child{
+              border:1px solid $white;
+              border-right: 1px solid $white;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

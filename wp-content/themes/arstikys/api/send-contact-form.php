@@ -29,7 +29,7 @@ $message = $_POST['message'];
 //));
 //$response2 = curl_exec($ch2);
 
-$to = 'vykintas@expertmedia.lt';
+$to = 'paulius@arstikys.lt';
 $subject = 'Arstikys.lt: Kontaktų forma';
 
 $message = '
