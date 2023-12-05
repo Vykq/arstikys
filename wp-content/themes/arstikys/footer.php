@@ -16,7 +16,7 @@
                         </div>
                     <?php endif; ?>
                     <div class="blue-button-area">
-                        <a href="/book-a-meeting/" class="btn-primary">Contact us
+                        <a href="/book-a-meeting/" class="btn-primary">Let`s talk
                             <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="8.502" height="15.005" viewBox="0 0 8.502 15.005">
                               <path id="Path_762" data-name="Path 762" d="M12385.378,46.064l6.088-6.088,6.089,6.088" transform="translate(47.478 -12383.964) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                             </svg>

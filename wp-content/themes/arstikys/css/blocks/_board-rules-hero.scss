@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 8rem;
+  overflow: hidden;
   .shadow{
     &.top{
       height: 21rem;
@@ -182,8 +183,8 @@
           width: calc(120% + 3.25rem);
           overflow: hidden;
           max-height: 44rem;
-          border-top-right-radius: 15px;
-          border-bottom-right-radius: 15px;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
           @media (max-width: 1700px){
             width: calc(120% + 4rem);
           }
