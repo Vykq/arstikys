@@ -22,7 +22,7 @@
                         <nav>
                             <a class="medium white px17" href="/about-me/">About me</a>
                             <a class="medium white px17"  href="/boards/">Boards</a>
-                            <a class="medium white px17"  href="/consultations/">Consultations</a>
+                            <a class="medium white px17"  href="/consulting/">Consulting</a>
                             <a class="medium white px17"  href="/strategy-management/">Strategy management</a>
                             <a class="medium white px17"  href="/news/">News</a>
                             <a class="medium white px17" href="/contacts/">Contacts</a>
@@ -69,7 +69,7 @@
                                 <a href="/boards/" class="white medium">Boards</a>
                             </li>
                             <li class="menu-item">
-                                <a href="/consultations/" class="white medium">Consultations</a>
+                                <a href="/consulting/" class="white medium">Consulting</a>
                             </li>
                             <li class="menu-item">
                                 <a href="/strategy-management/" class="white medium">Strategy management</a>

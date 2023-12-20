@@ -44,6 +44,11 @@
                         <?php endif; ?>
                     </div>
                     <div class="social-links">
+                        <?php if(get_field('LinkedIn','main')) : ?>
+                            <div class="link">
+                                <a class="white" href="<?php the_field('LinkedIn','main'); ?>" target="_blank">LinkedIn</a>
+                            </div>
+                        <?php endif; ?>
                         <?php if(get_field('facebook','main')) : ?>
                             <div class="link">
                                 <a class="white" href="<?php the_field('facebook','main'); ?>" target="_blank">Facebook</a>
@@ -71,7 +76,7 @@
                             <a class="white px17"  href="/boards/">Boards</a>
                         </li>
                         <li>
-                            <a class="white px17" href="/consultations/">Consultations</a>
+                            <a class="white px17" href="/consulting/">Consulting</a>
                         </li>
                         <li>
                             <a class="white px17"  href="/strategy-management/">Strategy management</a>

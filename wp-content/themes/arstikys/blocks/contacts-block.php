@@ -28,6 +28,11 @@
                     <?php endif; ?>
                 </div>
                 <div class="social-links">
+                    <?php if(get_field('LinkedIn','main')) : ?>
+                        <div class="link">
+                            <a class="white" href="<?php the_field('LinkedIn','main'); ?>" target="_blank">LinkedIn</a>
+                        </div>
+                    <?php endif; ?>
                     <?php if(get_field('facebook','main')) : ?>
                         <div class="link">
                             <a class="white" href="<?php the_field('facebook','main'); ?>" target="_blank">Facebook</a>
