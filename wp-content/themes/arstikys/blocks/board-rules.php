@@ -1,4 +1,4 @@
-<div class="board-rules" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/first-wave.jpg'; ?>)">
+<div id="boards" class="board-rules" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/first-wave.jpg'; ?>)">
     <div class="shadow top"></div>
     <div class="shadow bottom"></div>
     <div class="shadow left"></div>
@@ -8,6 +8,7 @@
             <div class="left">
                 <h2 class="title white px90 semi"><?php the_field('title'); ?></h2>
                 <p class="content white"><?php the_field('content'); ?></p>
+                <?php if(get_field('button_url')) : ?>
                 <div class="blue-button-area">
                     <a href="<?php the_field('button_url'); ?>" class="btn-primary"><?php the_field('button_text'); ?>
                         <span class="arrow">
@@ -15,6 +16,7 @@
                         </span>
                     </a>
                 </div>
+                <?php endif; ?>
             </div>
             <div class="right">
                 <?php if(have_rows('rules')) :
@@ -23,7 +25,7 @@
                 <div class="blur-content">
                     <?php while(have_rows('rules')) : the_row(); ?>
                         <div class="cell <?php echo 'number' . $count; ?>">
-                            <p class="rule-title"><?php the_sub_field('title'); ?></p>
+                            <p class="rule-title"><span>✲ </span><?php the_sub_field('title'); ?></p>
                             <p class="rule-desc"><?php the_sub_field('content'); ?></p>
                         </div>
                     <?php
@@ -31,6 +33,7 @@
                     endwhile; ?>
                 </div>
                 <?php endif; ?>
+                <?php if(get_field('button_url')) : ?>
                 <div class="blue-button-area">
                     <a href="<?php the_field('button_url'); ?>" class="btn-primary"><?php the_field('button_text'); ?>
                         <span class="arrow">
@@ -38,6 +41,7 @@
                         </span>
                     </a>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="consultations-block">
+<div id="consultations" class="consultations-block">
     <div class="container">
         <div class="wrapper">
             <?php if(get_field('image')) : ?>

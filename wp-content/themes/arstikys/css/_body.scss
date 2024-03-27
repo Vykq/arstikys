@@ -29,6 +29,7 @@ html {
   }
   &.modal-is-open {
     overflow: hidden;
+    overflow-y:hidden;
   }
 }
 

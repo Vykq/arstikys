@@ -5,6 +5,8 @@ const openMobileMenu = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
 
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
     setModalTop();
 
     window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +23,13 @@ const openMobileMenu = () => {
         }
     })
 
+
+    mobileLinks.forEach(link =>{
+        link.addEventListener('click', (e) => {
+            console.log('aa');
+            closeMenu();
+        })
+    })
 
     window.addEventListener('click', (event) => {
         if (event.target.classList.contains('mobile')) {

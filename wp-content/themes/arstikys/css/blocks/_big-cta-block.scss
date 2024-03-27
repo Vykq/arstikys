@@ -11,16 +11,13 @@
     padding: 4.5rem 0;
   }
   .shadow{
-    display: none;
-    @media (max-width: 900px){
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #00000060;
-        display: block;
-    }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 25%, rgba(255,255,255,0) 100%);
+    display: block;
   }
   .container{
     @include structure();

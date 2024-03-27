@@ -1,4 +1,4 @@
-<div class="strategy-management" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/second-wave.jpg'; ?>)">
+<div id="strategy-management" class="strategy-management" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/second-wave.jpg'; ?>)">
     <div class="shadow top"></div>
     <div class="shadow bottom"></div>
     <div class="container">
@@ -16,6 +16,7 @@
             </div>
         <?php endif; ?>
 
+        <?php if(get_field('button_url')) : ?>
         <div class="blue-button-area">
             <a href="<?php the_field('button_url'); ?>" class="btn-primary"><?php the_field('button_text'); ?>
                 <span class="arrow">
@@ -23,5 +24,6 @@
                         </span>
             </a>
         </div>
+        <?php endif; ?>
     </div>
 </div>

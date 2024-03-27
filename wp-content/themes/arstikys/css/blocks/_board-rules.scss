@@ -56,7 +56,7 @@
     .wrapper{
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
-      align-items: center;
+      gap:2rem;
       @media (max-width: 900px){
         grid-template-columns: 1fr;
       }
@@ -88,12 +88,9 @@
           border-radius: 10px;
           padding:2rem;
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           @media (max-width: 1500px){
             padding:1rem;
-          }
-          @media (max-width: 1280px){
-            grid-template-columns: 1fr;
           }
           .cell{
             position: relative;
@@ -102,10 +99,14 @@
               padding:2rem;
             }
             .rule-title{
-              color:$txtgray;
+              color:#FFF;
               font-size: 1.5rem;
               line-height: 2rem;
               margin-bottom: 1.75rem;
+              font-weight: 500;
+              span{
+                color:$blue;
+              }
             }
             .rule-desc{
               color:$txtgray;
@@ -122,19 +123,6 @@
                 left: 0;
                 background-color: $ruleBorder;
               }
-              &:after{
-                content:'';
-                position: absolute;
-                height: calc(100% - 1rem);
-                width: 1px;
-                right:0;
-                top: 0;
-                background-color: $ruleBorder;
-                @media (max-width: 1280px){
-                  height: 0;
-                  width: 0;
-                }
-              }
             }
             &.number2{
               &:before{
@@ -148,30 +136,6 @@
               }
             }
             &.number3{
-              &:before{
-                @media (max-width: 1280px) {
-                  content: '';
-                  position: absolute;
-                  width: calc(100% - 1rem);
-                  height: 1px;
-                  bottom: 0;
-                  right: 0;
-                  background-color: $ruleBorder;
-                }
-              }
-              &:after{
-                content:'';
-                position: absolute;
-                height: calc(100% - 1rem);
-                width: 1px;
-                right:0;
-                bottom: 0;
-                background-color: $ruleBorder;
-                @media (max-width: 1280px){
-                  height: 0;
-                  width: 0;
-                }
-              }
             }
 
           }

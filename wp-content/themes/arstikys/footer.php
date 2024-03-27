@@ -1,5 +1,5 @@
 </main>
-    <footer>
+    <footer id="contacts">
     <div class="main-footer">
         <div class="container">
             <div class="top-footer">
@@ -60,26 +60,6 @@
                             </div>
                         <?php endif; ?>
                     </div>
-                </div>
-
-                <div class="col">
-                    <ul class="footer-menu">
-                        <li>
-                            <a class="white px17" href="/about-me/">About me</a>
-                        </li>
-                        <li>
-                            <a class="white px17"  href="/boards/">Boards</a>
-                        </li>
-                        <li>
-                            <a class="white px17" href="/consultations/">Consultations</a>
-                        </li>
-                        <li>
-                            <a class="white px17"  href="/strategy-management/">Strategy management</a>
-                        </li>
-                        <li>
-                            <a class="white px17"  href="/contacts/">Contacts</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
