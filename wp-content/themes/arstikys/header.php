@@ -86,6 +86,11 @@
                                     <a class="white px18 medium" href="<?php the_field('youtube','main'); ?>" target="_blank">Youtube</a>
                                 </div>
                             <?php endif; ?>
+                            <?php if(get_field('LinkedIn','main')) : ?>
+                                <div class="link">
+                                    <a class="white px18 medium" href="<?php the_field('LinkedIn','main'); ?>" target="_blank">LinkedIn</a>
+                                </div>
+                            <?php endif; ?>
                             <?php if(get_field('instagram','main')) : ?>
                                 <div class="link">
                                     <a class="white px18 medium" href="<?php the_field('instagram','main'); ?>" target="_blank">Instagram</a>
