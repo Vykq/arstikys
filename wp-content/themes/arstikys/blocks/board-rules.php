@@ -21,7 +21,9 @@
             <div class="right">
                 <?php if(have_rows('rules')) :
                     $count = 1;
+                    $rows = count(get_field('rules'));
                     ?>
+                <p class="top"><span><?php echo $rows; ?></span> rules of the board</p>
                 <div class="blur-content">
                     <?php while(have_rows('rules')) : the_row(); ?>
                         <div class="cell <?php echo 'number' . $count; ?>">

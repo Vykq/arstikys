@@ -82,6 +82,16 @@
         }
       }
       .right{
+        .top{
+          color:#FFF;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          margin-bottom: 1.75rem;
+          font-weight: 500;
+          span{
+            color:$blue;
+          }
+        }
         .blur-content{
           background-color: #1F1F1F60;
           backdrop-filter: blur(20px);

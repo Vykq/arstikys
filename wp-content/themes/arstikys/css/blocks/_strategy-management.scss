@@ -39,6 +39,16 @@
       line-height: 1.5rem;
       margin-bottom: 4rem;
     }
+    .top{
+      color:#FFF;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1.75rem;
+      font-weight: 500;
+      span{
+        color:$blue;
+      }
+    }
     .tabs-wrapper{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -49,6 +59,7 @@
       @media (max-width: 900px){
         grid-template-columns: 1fr;
       }
+
       .tab{
         padding:2rem;
         background-color: rgb(31 31 31 / 60%);

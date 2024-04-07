@@ -5,7 +5,10 @@
         <h2 class="title white px90"><?php the_field('title'); ?></h2>
         <p class="content white"><?php the_field('content'); ?></p>
 
-        <?php if(have_rows('tabs')) : ?>
+        <?php if(have_rows('tabs')) :
+            $rows = count(get_field('tabs'));
+            ?>
+            <p class="top"><span><?php echo $rows; ?></span> steps of strategy session</p>
             <div class="tabs-wrapper">
                 <?php while(have_rows('tabs')) : the_row(); ?>
                     <div class="tab">

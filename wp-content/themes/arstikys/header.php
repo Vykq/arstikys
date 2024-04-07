@@ -20,10 +20,10 @@
 
                     <div class="menu-area">
                         <nav>
-                            <a class="medium white px17"  href="<?php echo get_home_url(); ?>#boards">Boards</a>
-                            <a class="medium white px17"  href="<?php echo get_home_url(); ?>#consultations">Consultations</a>
-                            <a class="medium white px17"  href="<?php echo get_home_url(); ?>#strategy-management">Strategy management</a>
-                            <a class="medium white px17" href="<?php echo get_home_url(); ?>#contacts">Contacts</a>
+                            <a class="medium white px17 scroll-me"  href="<?php echo get_home_url(); ?>#boards">Boards</a>
+                            <a class="medium white px17 scroll-me"  href="<?php echo get_home_url(); ?>#consultations">Consulting</a>
+                            <a class="medium white px17 scroll-me"  href="<?php echo get_home_url(); ?>#strategy-management">Strategy management</a>
+                            <a class="medium white px17 scroll-me" href="<?php echo get_home_url(); ?>#contacts">Contacts</a>
                         </nav>
                     </div>
                     
@@ -61,16 +61,16 @@
                     <div class="middle">
                         <ul class="menu">
                             <li class="menu-item">
-                                <a href="<?php echo get_home_url() . '#boards'; ?>" class="white medium">Boards</a>
+                                <a href="<?php echo get_home_url() . '#boards'; ?>" class="white medium scroll-me">Boards</a>
                             </li>
                             <li class="menu-item">
-                                <a href="<?php echo get_home_url() . '#consultations'; ?>" class="white medium">Consultations</a>
+                                <a href="<?php echo get_home_url() . '#consultations'; ?>" class="white medium scroll-me">Consulting</a>
                             </li>
                             <li class="menu-item">
-                                <a href="<?php echo get_home_url() . '#strategy-management'; ?>" class="white medium">Strategy management</a>
+                                <a href="<?php echo get_home_url() . '#strategy-management'; ?>" class="white medium scroll-me">Strategy management</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#contacts" class="white medium">Contacts</a>
+                                <a href="#contacts" class="white medium scroll-me">Contacts</a>
                             </li>
                         </ul>
                     </div>
