@@ -56,19 +56,19 @@
                     <form class="contact-form">
                         <div class="two-col">
                             <div class="col">
-                                <input type="text" name="name" placeholder="Vardas Pavardė">
+                                <input type="text" name="name" placeholder="Name Surname">
                             </div>
                             <div class="col">
-                                <input type="text" name="phone" placeholder="Telefono numeris">
+                                <input type="text" name="phone" placeholder="Phone number">
                             </div>
                         </div>
                         <div class="two-col">
                             <div class="col">
-                                <input type="text" name="email" placeholder="Elektroninis paštas">
+                                <input type="text" name="email" placeholder="E. mail">
                             </div>
                         </div>
                         <div class="text-area-block">
-                            <textarea name="message" placeholder="Trumpa žinutė"></textarea>
+                            <textarea name="message" placeholder="Message"></textarea>
                         </div>
                         <div class="button-area">
                             <p class="error-msg"></p>

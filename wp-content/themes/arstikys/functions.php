@@ -6,7 +6,7 @@ require_once ('includes/default.php');
  */
 
 function webpack_files() {
-    wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), [ 'wp-util' ], '1.1.45', true);
+    wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), [ 'wp-util' ], '1.1.46', true);
     wp_enqueue_script('AnimateScroll', get_theme_file_uri('assets/AnimateScroll.min.js'), [ 'wp-util' ], '1.1.45', true);
     wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), '1.1.4');
     wp_localize_script( 'webpack-js', 'themeUrl',

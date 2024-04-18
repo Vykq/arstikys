@@ -15,11 +15,24 @@ window.addEventListener('DOMContentLoaded', () => {
             const href = anchor.getAttribute('href');
             const targetId = href.includes('#') ? href.substring(href.indexOf('#')) : href;
             const targetElement = document.querySelector(targetId); // Find the target element
-            if (targetElement) {
-                console.log('a');
-                animateScroll(targetElement, 2000, 'linear', 0); // Adjusted duration for a realistic value
 
+            if(window.location.pathname) {
+                const homepageUrl = window.location.origin;
+                const url = homepageUrl + targetId;
+                console.log(url);
+                window.location = url;
+            } else {
+
+
+                if (targetElement) {
+
+
+                    console.log('a');
+                    animateScroll(targetElement, 2000, 'linear', 0); // Adjusted duration for a realistic value
+
+                }
             }
+
         });
     });
 
