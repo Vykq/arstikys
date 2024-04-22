@@ -20,16 +20,16 @@ function webpack_files() {
             'loading' => __('Siunčiami duomenys...', 'core'),
             'success' => __('Jūsų užklausą gavome! Susisieksime su Jumis netrukus.', 'core'),
             'failure' => __('Kažkas negerai, prašome bandyti vėliau', 'core'),
-            'name_empty' => __('Neužpildytas vardo laukelis', 'core'),
-            'name_error' => __('Neteisingai užpildytas vardo laukelis', 'core'),
+            'name_empty' => __('Empty Name field', 'core'),
+            'name_error' => __('Bad name field', 'core'),
             'file_empty' => __('Nepridėjote jokio failo', 'core'),
             'surname_empty' => __('Neužpildytas pavardės laukelis', 'core'),
             'surname_error' => __('Neteisingai užpildytas pavardės laukelis', 'core'),
-            'phone_empty' => __('Neužpildytas telefono laukelis', 'core'),
-            'phone_error' => __('Neteisingai užpildytas telefono laukelis', 'core'),
-            'mail_empty' => __('Neužpildytas el. pašto laukelis', 'core'),
-            'mail_error' => __('Neteisingai užpildytas el. pašto laukelis', 'core'),
-            'msg_empty' => __('Tuščia žinutė...', 'core'),
+            'phone_empty' => __('Empty phone number field.', 'core'),
+            'phone_error' => __('Bad phone number field.', 'core'),
+            'mail_empty' => __('Empty e. mail field.', 'core'),
+            'mail_error' => __('Bad e. mail field.', 'core'),
+            'msg_empty' => __('Empty message... Please enter something.', 'core'),
         )
     );
     //wp_enqueue_script('splide-js', get_theme_file_uri('assets/splide.min.js'), array(), '4.1.4', true);
